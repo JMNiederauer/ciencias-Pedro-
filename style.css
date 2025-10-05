@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: #000;
+  color: #0f0;
+  font-family: "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(10px + env(safe-area-inset-top)) 10px 10px 10px;
+  overscroll-behavior: contain;
+}
+#game {
+  width: 100%;
+  max-width: 600px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+#imagem-cena {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+pre {
+  white-space: pre-wrap;
+  line-height: 1.4;
+  font-size: 1rem;
+  margin: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+#opcoes { margin-top: 10px; }
+#opcoes button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background: #111;
+  color: #0f0;
+  border: 1px solid #0f0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+#opcoes button:hover {
+  background: #0f0;
+  color: #000;
+}
+.hidden { display: none; }
